@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  /* Palette from the approved WarmTouch design handoff (Claude Design). */
+  --color-cream: #f5ead8;
+  --color-cream-surface: #ebddc5;
+  --color-ink: #201e1d;
+
+  /* Amber/orange — secondary accent: eyebrow labels, highlight text. */
+  --color-amber-100: #fff2eb;
+  --color-amber-200: #ffe1d0;
+  --color-amber-300: #ffc6a5;
+  --color-amber-400: #f6a06b;
+  --color-amber-500: #d67f48;
+  --color-amber-600: #b2622d;
+  --color-amber-700: #8c491a;
+  --color-amber-800: #643312;
+  --color-amber-900: #402310;
+
+  /* Green — WarmTouch brand color: headlines, icons, buttons, dividers.
+     900 is reserved for small accent bands (header nav, "Our Promise"). */
+  --color-green-100: #f0fae1;
+  --color-green-200: #e1eecc;
+  --color-green-300: #ccdbb2;
+  --color-green-400: #aebf92;
+  --color-green-500: #8fa073;
+  --color-green-600: #728157;
+  --color-green-700: #56633f;
+  --color-green-800: #3d472b;
+  --color-green-900: #272e1b;
+
+  --font-heading: var(--font-caprasimo), Georgia, serif;
+  --font-body: var(--font-figtree), Arial, Helvetica, sans-serif;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-surface: var(--color-cream-surface);
+  --color-ink: var(--color-ink);
+
+  --color-amber-100: var(--color-amber-100);
+  --color-amber-200: var(--color-amber-200);
+  --color-amber-300: var(--color-amber-300);
+  --color-amber-400: var(--color-amber-400);
+  --color-amber-500: var(--color-amber-500);
+  --color-amber-600: var(--color-amber-600);
+  --color-amber-700: var(--color-amber-700);
+  --color-amber-800: var(--color-amber-800);
+  --color-amber-900: var(--color-amber-900);
+
+  --color-green-100: var(--color-green-100);
+  --color-green-200: var(--color-green-200);
+  --color-green-300: var(--color-green-300);
+  --color-green-400: var(--color-green-400);
+  --color-green-500: var(--color-green-500);
+  --color-green-600: var(--color-green-600);
+  --color-green-700: var(--color-green-700);
+  --color-green-800: var(--color-green-800);
+  --color-green-900: var(--color-green-900);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Shifts Tailwind's whole rem-based type scale up so text-base = 18px,
+     keeping body copy legible for an older audience by default. */
+  font-size: 112.5%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+/* Offset anchor scrolling so section headings clear the sticky header. */
+section[id] {
+  scroll-margin-top: 6.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
