@@ -16,9 +16,6 @@ export function FAQ() {
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {faq.headline}
         </h2>
-        <p className="mt-6 max-w-[32em] rounded-[28px] border-[3px] border-dashed border-green-400 px-6 py-5 text-lg font-semibold leading-snug text-green-700">
-          {faq.draftNote}
-        </p>
 
         <div className="mt-9 flex flex-col gap-4">
           {faq.items.map((item, index) => {

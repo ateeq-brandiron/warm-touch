@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Phone } from "lucide-react";
 import { contact } from "@/content/contact";
 import { site } from "@/content/site";
@@ -11,6 +12,8 @@ const inputClasses =
 const labelClasses = "flex flex-col gap-2 text-lg font-bold text-green-900";
 
 export function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <section id="get-started" className="bg-cream">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
@@ -48,7 +51,10 @@ export function Contact() {
           </div>
 
           <form
-            onSubmit={(event) => event.preventDefault()}
+            onSubmit={(event) => {
+              event.preventDefault();
+              setSubmitted(true);
+            }}
             className="flex flex-col gap-5 rounded-[44px] bg-cream px-8 py-9 sm:px-9"
           >
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -108,6 +114,11 @@ export function Contact() {
             >
               {contact.submitLabel}
             </button>
+            {submitted && (
+              <p className="m-0 rounded-2xl bg-green-100 px-5 py-4 text-lg leading-relaxed text-green-800">
+                {contact.submitMessage}
+              </p>
+            )}
             <p className="m-0 text-lg italic leading-relaxed text-green-700">{contact.formNote}</p>
           </form>
         </div>
