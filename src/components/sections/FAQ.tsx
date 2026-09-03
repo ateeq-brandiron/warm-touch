@@ -9,7 +9,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="bg-cream">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <span className="mb-6 block text-base font-bold uppercase tracking-wide text-green-700">
           {faq.eyebrow}
         </span>

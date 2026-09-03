@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 export function FirstConversation() {
   return (
     <section className="bg-cream">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <Eyebrow label={firstConversation.eyebrow} />
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {firstConversation.headline}

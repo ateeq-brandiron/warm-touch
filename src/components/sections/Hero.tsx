@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 export function Hero() {
   return (
     <section className="bg-cream">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
         <div>
           <span className="mb-5 flex items-center gap-3 text-base font-bold uppercase tracking-wide text-amber-700">
             <span className="h-[3px] w-7 rounded-sm bg-amber-600" />
