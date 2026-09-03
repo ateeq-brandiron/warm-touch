@@ -10,7 +10,7 @@ export function Signs() {
         <h2 className="mx-auto max-w-[16em] text-center font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {signs.headline}
         </h2>
-        <p className="mx-auto mt-6 max-w-[44em] text-center text-xl leading-relaxed text-green-800">
+        <p className="mx-auto mt-6 max-w-[44em] text-center text-xl leading-relaxed text-wt-ink">
           {signs.intro}
         </p>
 
@@ -18,7 +18,7 @@ export function Signs() {
           {signs.items.map(({ icon: Icon, text }) => (
             <div
               key={text}
-              className="flex items-start gap-4 rounded-[28px] bg-green-100 px-7 py-6 text-xl font-medium leading-snug text-green-800 transition-transform duration-150 hover:-translate-y-1 hover:shadow-md"
+              className="flex items-start gap-4 rounded-[28px] bg-wt-peach-100 px-7 py-6 text-xl font-medium leading-snug text-wt-ink transition-transform duration-150 hover:-translate-y-1 hover:shadow-md"
             >
               <Icon className="mt-0.5 h-6 w-6 shrink-0 text-amber-600" strokeWidth={2.25} />
               <span>{text}</span>
@@ -26,13 +26,13 @@ export function Signs() {
           ))}
         </div>
 
-        <p className="mx-auto mt-9 max-w-[40em] text-center text-xl leading-relaxed text-green-800">
+        <p className="mx-auto mt-9 max-w-[40em] text-center text-xl leading-relaxed text-wt-ink">
           {signs.closing}
         </p>
 
         <a
           href={site.phoneHref}
-          className="mx-auto mt-7 flex w-fit items-center gap-3 rounded-full bg-green-700 px-9 py-5 font-heading text-xl text-white shadow-sm transition-colors hover:bg-green-800"
+          className="mx-auto mt-7 flex w-fit items-center gap-3 rounded-full bg-amber-700 px-9 py-5 font-heading text-xl text-white shadow-sm transition-colors hover:bg-[#9a3f22]"
         >
           {signs.cta.label}
         </a>

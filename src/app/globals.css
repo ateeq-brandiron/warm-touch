@@ -1,33 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  /* Palette from the approved WarmTouch design handoff (Claude Design). */
-  --color-cream: #f5ead8;
-  --color-cream-surface: #ebddc5;
-  --color-ink: #201e1d;
+  /* Approved palette update (2026): #ed6a40 #e89e77 #968b55 #6e7774 #c6b388
+     #99aaa2 #f8931f #dd404b — replaces the earlier green/amber system. */
+  --color-cream: #f8f3e8;
+  --color-cream-surface: #eae1cd;
+  --color-ink: #3d443f;
 
-  /* Amber/orange — secondary accent: eyebrow labels, highlight text. */
+  /* Amber/terracotta — secondary accent: eyebrow labels, highlight text.
+     Only 400-700 are part of the approved palette; the rest are unused. */
   --color-amber-100: #fff2eb;
   --color-amber-200: #ffe1d0;
   --color-amber-300: #ffc6a5;
-  --color-amber-400: #f6a06b;
-  --color-amber-500: #d67f48;
-  --color-amber-600: #b2622d;
-  --color-amber-700: #8c491a;
+  --color-amber-400: #f28a67;
+  --color-amber-500: #ed6a40;
+  --color-amber-600: #d95a32;
+  --color-amber-700: #b44a28;
   --color-amber-800: #643312;
   --color-amber-900: #402310;
 
-  /* Green — WarmTouch brand color: headlines, icons, buttons, dividers.
+  /* Olive/khaki — WarmTouch brand color: headlines, icons, buttons, dividers.
      900 is reserved for small accent bands (header nav, "Our Promise"). */
-  --color-green-100: #f0fae1;
-  --color-green-200: #e1eecc;
-  --color-green-300: #ccdbb2;
-  --color-green-400: #aebf92;
-  --color-green-500: #8fa073;
-  --color-green-600: #728157;
-  --color-green-700: #56633f;
-  --color-green-800: #3d472b;
-  --color-green-900: #272e1b;
+  --color-green-100: #f0eddf;
+  --color-green-200: #ddd7bd;
+  --color-green-300: #c9c199;
+  --color-green-400: #b0a678;
+  --color-green-500: #968b55;
+  --color-green-600: #7d7446;
+  --color-green-700: #665f39;
+  --color-green-800: #4f4a2c;
+  --color-green-900: #3b3721;
+
+  /* Named accents from the approved palette, used for specific one-off
+     treatments rather than a full tonal ramp. */
+  --color-wt-khaki: #c6b388;
+  --color-wt-peach-100: #f9e6d9;
+  --color-wt-sage-100: #e6ebe8;
+  --color-wt-slate-dark: #545c59;
+  --color-wt-ink: #464f4c;
+  --color-wt-ink-soft: #5d6663;
+  --color-wt-amber: #f8931f;
+  --color-wt-berry: #dd404b;
 
   --font-heading: var(--font-caprasimo), Georgia, serif;
   --font-body: var(--font-figtree), Arial, Helvetica, sans-serif;
@@ -57,6 +70,15 @@
   --color-green-700: var(--color-green-700);
   --color-green-800: var(--color-green-800);
   --color-green-900: var(--color-green-900);
+
+  --color-wt-khaki: var(--color-wt-khaki);
+  --color-wt-peach-100: var(--color-wt-peach-100);
+  --color-wt-sage-100: var(--color-wt-sage-100);
+  --color-wt-slate-dark: var(--color-wt-slate-dark);
+  --color-wt-ink: var(--color-wt-ink);
+  --color-wt-ink-soft: var(--color-wt-ink-soft);
+  --color-wt-amber: var(--color-wt-amber);
+  --color-wt-berry: var(--color-wt-berry);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);

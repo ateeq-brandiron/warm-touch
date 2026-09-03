@@ -115,11 +115,11 @@ export function Contact() {
               {contact.submitLabel}
             </button>
             {submitted && (
-              <p className="m-0 rounded-2xl bg-green-100 px-5 py-4 text-lg leading-relaxed text-green-800">
+              <p className="m-0 rounded-2xl bg-green-100 px-5 py-4 text-lg leading-relaxed text-wt-ink">
                 {contact.submitMessage}
               </p>
             )}
-            <p className="m-0 text-lg italic leading-relaxed text-green-700">{contact.formNote}</p>
+            <p className="m-0 text-lg italic leading-relaxed text-wt-ink-soft">{contact.formNote}</p>
           </form>
         </div>
       </div>

@@ -6,41 +6,43 @@ export type FaqItem = {
 export const faq = {
   eyebrow: "Questions families ask",
   headline: "Straight answers, before you even call.",
+  draftNote:
+    "Draft answers, written from the site content, to be reviewed and confirmed before launch.",
   items: [
     {
       question: "Does this really cost my family nothing?",
       answer:
-        "Yes. WarmTouch is compensated by the senior living communities we help fill, similar to how a real estate agent is typically paid by the seller, not the buyer. Your family never pays a placement fee, consulting fee, or membership fee for our services.",
+        "Yes. WarmTouch is compensated by the communities we place with, so there is no consulting fee, no membership, and no charge to your family at any point in the process.",
     },
     {
       question: "How is that different from just calling communities myself?",
       answer:
-        "You're always welcome to call communities directly. The difference is Cheri already knows which ones are worth calling, tours with you in person, catches details a first-time visitor might miss, and negotiates on your behalf, all at no extra cost.",
+        "A sales office represents its own community. Cheri represents your family: she narrows a long list to the few homes actually worth your time, tours with you in person, and negotiates the terms on your behalf.",
     },
     {
       question: "What areas does WarmTouch serve?",
       answer:
-        "Cheri works with a network of communities across the region. Reach out below or give her a call, and she can tell you right away whether she covers your area.",
+        "[Draft: service area to be confirmed.] Call and ask about your area. If it isn't one Cheri serves, she'll point you toward someone who can help.",
     },
     {
-      question: "We're not sure what kind of care is needed yet, can you still help?",
+      question: "We're not sure what kind of care is needed yet. Can you still help?",
       answer:
-        "Absolutely, that's actually the most common starting point. Most families call Cheri before they've settled on independent living, assisted living, or memory care, and figuring that out together is part of the process.",
+        "That's where most families start. Sorting out whether independent living, assisted living, or memory care is the right level is part of the first conversation, and nothing has to be decided that day.",
     },
     {
       question: "How long does the process usually take?",
       answer:
-        "It depends on your timeline and your loved one's needs. Some families need to move quickly out of necessity; others take weeks to feel confident. Cheri moves at your family's pace, not a sales deadline.",
+        "[Draft: typical timeline to be confirmed.] It depends on urgency: some families are touring quickly, others plan months ahead. Cheri moves at your family's pace, not a sales timeline.",
     },
     {
       question: "Do you only work with certain communities?",
       answer:
-        "Cheri's job is to find the right fit for your family, not to steer you toward a particular community. If a place isn't right for your loved one, she'll tell you.",
+        "Cheri recommends homes she knows and would trust for her own family. If a community isn't the right fit, she'll say so, even when that makes the search take longer.",
     },
     {
       question: "What if we already have a community in mind?",
       answer:
-        "That's a great place to start. Cheri can still tour it with you, help evaluate it against other options, and negotiate on your family's behalf.",
+        "Bring it to her. Cheri will tour it with you, ask the questions families don't think to ask, and help you compare it honestly against the other options before anything is signed.",
     },
   ] satisfies FaqItem[],
 };

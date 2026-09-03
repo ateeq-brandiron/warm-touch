@@ -20,7 +20,7 @@ export function Hero() {
           {hero.paragraphs.map((paragraph) => (
             <p
               key={paragraph}
-              className="mt-6 max-w-[30em] text-xl font-medium leading-relaxed text-green-800 first:mt-8"
+              className="mt-6 max-w-[30em] text-xl font-medium leading-relaxed text-wt-ink first:mt-8"
             >
               {paragraph}
             </p>
@@ -28,7 +28,7 @@ export function Hero() {
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Button href={hero.primaryCta.href}>{hero.primaryCta.label}</Button>
-            <Button href={site.phoneHref} className="shadow-md">
+            <Button href={site.phoneHref} variant="phone" className="shadow-md">
               <Phone className="h-5 w-5" strokeWidth={2.75} />
               Call {site.phoneDisplay}
             </Button>
@@ -40,7 +40,7 @@ export function Hero() {
             {hero.trustPoints.map((point) => (
               <li
                 key={point}
-                className="flex items-center gap-3 text-lg font-bold text-green-800"
+                className="flex items-center gap-3 text-lg font-bold text-wt-ink"
               >
                 <Check
                   className="h-6 w-6 shrink-0 text-green-600"

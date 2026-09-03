@@ -11,7 +11,7 @@ export function Testimonials() {
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {testimonials.headline}
         </h2>
-        <p className="mt-6 max-w-[30em] text-xl leading-relaxed text-green-700">
+        <p className="mt-6 max-w-[30em] text-xl leading-relaxed text-wt-ink-soft">
           {testimonials.note}
         </p>
 
@@ -24,7 +24,7 @@ export function Testimonials() {
               <blockquote className="m-0 font-heading text-2xl leading-snug text-green-900">
                 {quote}
               </blockquote>
-              <figcaption className="mt-6 text-lg font-semibold leading-snug text-green-700">
+              <figcaption className="mt-6 text-lg font-semibold leading-snug text-wt-ink-soft">
                 {attribution}
               </figcaption>
             </figure>
@@ -32,7 +32,7 @@ export function Testimonials() {
 
           <figure className="m-0 flex items-center gap-5 rounded-[44px] border-[3px] border-dashed border-green-400 px-9 py-9 sm:px-11">
             <Video className="h-8 w-8 shrink-0 text-green-600" strokeWidth={2.75} />
-            <figcaption className="m-0 text-xl font-semibold leading-snug text-green-700">
+            <figcaption className="m-0 text-xl font-semibold leading-snug text-wt-ink-soft">
               {testimonials.videoPlaceholder}
             </figcaption>
           </figure>

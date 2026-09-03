@@ -6,7 +6,7 @@ export const aboutCheri = {
   tags: ["Patient", "Honest", "Local", "No pressure, ever"],
   headline: "She learned this community from the inside.",
   paragraphs: [
-    "Cheri began her career as a nail technician, spending her days inside senior living communities, doing manicures, trimming cuticles, and, more than anything, listening. Appointment after appointment, she got to know residents by name, learned which staff genuinely cared and which just showed up, and built a working understanding of the senior living world that most people never get close to.",
+    "Cheri spent years working directly inside senior living communities, building genuine relationships with residents, caregivers, and staff along the way. Visit after visit, conversation after conversation, she got to know residents by name, learned which staff genuinely cared and which just showed up, and built a working understanding of the senior living world that most people never get close to.",
     "Families started asking her opinion. Then they started asking her to come along. Over time, “can you help us find a place for Mom or Dad” became a calling of its own, and WarmTouch was born.",
   ],
   timeline: [

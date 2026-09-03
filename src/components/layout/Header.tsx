@@ -37,7 +37,7 @@ export function Header() {
 
         <a
           href={site.phoneHref}
-          className="hidden items-center gap-3 rounded-full bg-green-400 px-6 py-3.5 font-heading text-lg text-green-900 shadow-sm transition-colors hover:bg-green-300 sm:inline-flex"
+          className="hidden items-center gap-3 rounded-full bg-amber-700 px-6 py-3.5 font-heading text-lg text-white shadow-sm transition-colors hover:bg-[#9a3f22] sm:inline-flex"
         >
           <Phone className="h-5 w-5" strokeWidth={2.75} />
           {site.phoneDisplay}
@@ -45,7 +45,7 @@ export function Header() {
         <a
           href={site.phoneHref}
           aria-label={`Call ${site.name} at ${site.phoneDisplay}`}
-          className="inline-flex items-center justify-center rounded-full bg-green-400 p-3 text-green-900 sm:hidden"
+          className="inline-flex items-center justify-center rounded-full bg-amber-700 p-3 text-white sm:hidden"
         >
           <Phone className="h-5 w-5" strokeWidth={2.75} />
         </a>

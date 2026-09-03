@@ -16,6 +16,9 @@ export function FAQ() {
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {faq.headline}
         </h2>
+        <p className="mt-6 max-w-[32em] rounded-[28px] border-[3px] border-dashed border-green-400 px-6 py-5 text-lg font-semibold leading-snug text-wt-ink-soft">
+          {faq.draftNote}
+        </p>
 
         <div className="mt-9 flex flex-col gap-4">
           {faq.items.map((item, index) => {
@@ -29,7 +32,7 @@ export function FAQ() {
                   className="flex min-h-[72px] w-full items-center justify-between gap-5 px-8 py-7 text-left font-heading text-xl leading-tight text-green-900 transition-colors hover:bg-green-200 sm:text-2xl"
                 >
                   {item.question}
-                  <span className="grid h-10 w-10 shrink-0 place-content-center rounded-full bg-green-700 text-white">
+                  <span className="grid h-10 w-10 shrink-0 place-content-center rounded-full bg-wt-amber text-green-900">
                     {isOpen ? (
                       <Minus className="h-5 w-5" strokeWidth={3} />
                     ) : (
@@ -38,7 +41,7 @@ export function FAQ() {
                   </span>
                 </button>
                 {isOpen && (
-                  <p className="max-w-[32em] px-8 pb-8 text-lg leading-relaxed text-green-800">
+                  <p className="max-w-[32em] px-8 pb-8 text-lg leading-relaxed text-wt-ink">
                     {item.answer}
                   </p>
                 )}

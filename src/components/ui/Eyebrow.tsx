@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 type EyebrowProps = {
   label: string;
-  tone?: "amber" | "amber-light" | "green";
+  tone?: "amber" | "amber-light" | "amber-strong" | "green";
   align?: "left" | "center";
   dash?: boolean;
   className?: string;
@@ -10,13 +10,15 @@ type EyebrowProps = {
 
 const toneClasses: Record<NonNullable<EyebrowProps["tone"]>, string> = {
   amber: "text-amber-700",
-  "amber-light": "text-amber-400",
+  "amber-light": "text-cream",
+  "amber-strong": "text-[#9a3f22]",
   green: "text-green-700",
 };
 
 const dashToneClasses: Record<NonNullable<EyebrowProps["tone"]>, string> = {
   amber: "bg-amber-600",
-  "amber-light": "bg-amber-400",
+  "amber-light": "bg-wt-amber",
+  "amber-strong": "bg-amber-600",
   green: "bg-green-600",
 };
 

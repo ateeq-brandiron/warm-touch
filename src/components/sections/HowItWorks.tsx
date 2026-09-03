@@ -21,11 +21,11 @@ export function HowItWorks() {
                 <h3 className="font-heading text-2xl leading-tight text-green-900">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-xl leading-relaxed text-green-800">
+                <p className="mt-4 text-xl leading-relaxed text-wt-ink">
                   {step.description}
                 </p>
                 {step.note && (
-                  <p className="mt-3 max-w-[30em] text-lg italic leading-relaxed text-green-700">
+                  <p className="mt-3 max-w-[30em] text-lg italic leading-relaxed text-wt-ink-soft">
                     {step.note}
                   </p>
                 )}
@@ -34,7 +34,7 @@ export function HowItWorks() {
                     {step.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full bg-green-200 px-5 py-2.5 text-base font-semibold text-green-800"
+                        className="rounded-full bg-green-200 px-5 py-2.5 text-base font-semibold text-wt-ink"
                       >
                         {tag}
                       </span>

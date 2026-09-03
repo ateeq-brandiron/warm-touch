@@ -1,7 +1,7 @@
 export const testimonials = {
   eyebrow: "What families are saying",
   headline: "Stories from the families Cheri has walked with.",
-  note: "This section is reserved for real words from families Cheri has helped, testimonials to be added as they're collected. Facility names are intentionally left out of every story, by Cheri's request.",
+  note: "Real words from families Cheri has helped, added as they're collected. Facility names are intentionally left out of every story.",
   quotes: [
     {
       quote:

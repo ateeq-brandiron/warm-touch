@@ -10,7 +10,7 @@ export function Services() {
         <h2 className="mx-auto max-w-[16em] text-center font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {services.headline}
         </h2>
-        <p className="mx-auto mt-6 max-w-[44em] text-center text-xl leading-relaxed text-green-800">
+        <p className="mx-auto mt-6 max-w-[44em] text-center text-xl leading-relaxed text-wt-ink">
           {services.intro}
         </p>
 
@@ -24,13 +24,13 @@ export function Services() {
                 <Icon className="h-7 w-7 text-green-700" strokeWidth={2.75} />
               </span>
               <h3 className="font-heading text-2xl leading-tight text-green-900">{name}</h3>
-              <p className="mt-4 text-xl leading-relaxed text-green-800">{description}</p>
+              <p className="mt-4 text-xl leading-relaxed text-wt-ink">{description}</p>
               <p className="mt-7 text-lg font-bold text-green-900">
                 Often a good fit if your loved one:
               </p>
               <ul className="mt-3 flex flex-col gap-3">
                 {goodFitIf.map((item) => (
-                  <li key={item} className="flex gap-3 text-lg leading-snug text-green-800">
+                  <li key={item} className="flex gap-3 text-lg leading-snug text-wt-ink">
                     <Check
                       className="mt-1 h-6 w-6 shrink-0 text-green-600"
                       strokeWidth={2.75}
@@ -43,7 +43,7 @@ export function Services() {
           ))}
         </div>
 
-        <p className="mx-auto mt-8 max-w-[38em] text-center text-lg italic leading-relaxed text-green-700">
+        <p className="mx-auto mt-8 max-w-[38em] text-center text-lg italic leading-relaxed text-wt-ink-soft">
           {services.closing}
         </p>
       </div>
