@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 export function Hero() {
   return (
     <section className="bg-cream">
-      <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-[1440px] items-start gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
         <div>
           <span className="mb-5 flex items-center gap-3 text-base font-bold uppercase tracking-wide text-amber-700">
             <span className="h-[3px] w-7 rounded-sm bg-amber-600" />
@@ -26,7 +26,7 @@ export function Hero() {
             </p>
           ))}
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button href={hero.primaryCta.href}>{hero.primaryCta.label}</Button>
             <Button href={site.phoneHref} variant="phone" className="shadow-md">
               <Phone className="h-5 w-5" strokeWidth={2.75} />
