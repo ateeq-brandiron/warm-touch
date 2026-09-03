@@ -7,7 +7,7 @@ export function AboutCheri() {
     <section id="about-cheri" className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-start gap-10 rounded-[56px] bg-cream-surface p-8 sm:p-12">
-          <div className="mx-auto flex w-full max-w-[260px] flex-col items-center gap-5 text-center">
+          <div className="mx-auto flex w-full max-w-[260px] flex-col items-center gap-5 text-center lg:sticky lg:top-28">
             <figure className="m-0 h-[240px] w-[240px] overflow-hidden rounded-full shadow-md ring-8 ring-cream">
               <Image
                 src={aboutCheri.photo}
