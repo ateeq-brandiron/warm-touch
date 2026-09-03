@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import { contact } from "@/content/contact";
 import { site } from "@/content/site";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -85,16 +85,26 @@ export function Contact() {
               </label>
               <label className={labelClasses}>
                 Kind of care
-                <select name="careType" defaultValue="" className={inputClasses}>
-                  <option value="" disabled>
-                    Select one
-                  </option>
-                  {contact.careTypeOptions.map((option) => (
-                    <option key={option} value={option}>
-                      {option}
+                <div className="relative">
+                  <select
+                    name="careType"
+                    defaultValue=""
+                    className={`${inputClasses} appearance-none pr-12`}
+                  >
+                    <option value="" disabled>
+                      Select one
                     </option>
-                  ))}
-                </select>
+                    {contact.careTypeOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown
+                    className="pointer-events-none absolute right-6 top-1/2 h-5 w-5 -translate-y-1/2 text-green-700"
+                    strokeWidth={2.5}
+                  />
+                </div>
               </label>
             </div>
 
