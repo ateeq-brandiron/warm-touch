@@ -13,8 +13,8 @@ type ButtonProps = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   outline:
-    "border-[3px] border-green-400 bg-transparent text-green-800 hover:bg-green-200 focus-visible:outline-green-700",
-  phone: "bg-amber-700 text-white hover:bg-[#9a3f22] focus-visible:outline-amber-700",
+    "border-[3px] border-green-400 bg-transparent text-green-800 hover:border-wt-amber hover:bg-wt-amber hover:text-green-900 focus-visible:outline-green-700",
+  phone: "bg-amber-700 text-white hover:bg-wt-amber hover:text-green-900 focus-visible:outline-amber-700",
 };
 
 export function Button({

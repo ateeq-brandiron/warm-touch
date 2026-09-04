@@ -30,7 +30,7 @@ export function Contact() {
             <p className="mt-8 text-lg font-bold text-green-200">{contact.callLabel}</p>
             <a
               href={site.phoneHref}
-              className="mt-3 inline-flex items-center gap-4 rounded-full bg-cream px-8 py-6 font-heading text-2xl text-green-800 transition-colors hover:bg-white sm:text-3xl"
+              className="mt-3 inline-flex items-center gap-4 rounded-full bg-cream px-8 py-6 font-heading text-2xl text-green-800 transition-colors hover:bg-wt-amber hover:text-green-900 sm:text-3xl"
             >
               <Phone className="h-7 w-7" strokeWidth={2.75} />
               {site.phoneDisplay}
@@ -120,7 +120,7 @@ export function Contact() {
 
             <button
               type="submit"
-              className="min-h-[66px] rounded-full bg-green-700 font-heading text-xl text-white transition-colors hover:bg-green-800"
+              className="min-h-[66px] rounded-full bg-green-700 font-heading text-xl text-white transition-colors hover:bg-wt-amber hover:text-green-900"
             >
               {contact.submitLabel}
             </button>

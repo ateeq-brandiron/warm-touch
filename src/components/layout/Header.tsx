@@ -10,7 +10,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-green-900">
+    <header className="sticky top-0 z-50 bg-green-800">
       <div className="mx-auto flex max-w-[1440px] items-center gap-5 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="mr-auto block shrink-0">
           <Image
@@ -37,7 +37,7 @@ export function Header() {
 
         <a
           href={site.phoneHref}
-          className="hidden items-center gap-3 rounded-full bg-amber-700 px-6 py-3.5 font-heading text-lg text-white shadow-sm transition-colors hover:bg-[#9a3f22] sm:inline-flex"
+          className="hidden items-center gap-3 rounded-full bg-amber-700 px-6 py-3.5 font-heading text-lg text-white shadow-sm transition-colors hover:bg-wt-amber hover:text-green-900 sm:inline-flex"
         >
           <Phone className="h-5 w-5" strokeWidth={2.75} />
           {site.phoneDisplay}
@@ -45,7 +45,7 @@ export function Header() {
         <a
           href={site.phoneHref}
           aria-label={`Call ${site.name} at ${site.phoneDisplay}`}
-          className="inline-flex items-center justify-center rounded-full bg-amber-700 p-3 text-white sm:hidden"
+          className="inline-flex items-center justify-center rounded-full bg-amber-700 p-3 text-white transition-colors hover:bg-wt-amber hover:text-green-900 sm:hidden"
         >
           <Phone className="h-5 w-5" strokeWidth={2.75} />
         </a>
@@ -62,7 +62,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="border-t border-green-700/60 bg-green-900 px-4 pb-5 pt-2 sm:px-6 lg:hidden">
+        <nav className="border-t border-green-700/60 bg-green-800 px-4 pb-5 pt-2 sm:px-6 lg:hidden">
           <ul className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>
