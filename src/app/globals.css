@@ -86,9 +86,12 @@
 
 html {
   scroll-behavior: smooth;
-  /* Shifts Tailwind's whole rem-based type scale up so text-base = 18px,
-     keeping body copy legible for an older audience by default. */
-  font-size: 112.5%;
+  /* Shifts Tailwind's whole rem-based type scale up (text-base = 16.5px),
+     keeping body copy legible for an older audience by default. Scaled
+     down 8.33% from the original 112.5% to match the hero headline size
+     reduction — the Hero <h1> uses fixed px sizes so it's unaffected by
+     this and holds its tuned 2-line wrap regardless of this value. */
+  font-size: 103.125%;
 }
 
 body {
