@@ -13,7 +13,7 @@ export function Hero() {
             {hero.eyebrow}
           </span>
 
-          <h1 className="font-heading text-[2.4rem] leading-[1.06] text-green-900 sm:text-5xl lg:text-[3.6rem]">
+          <h1 className="font-heading text-[2.2rem] leading-[1.06] text-green-900 sm:text-5xl lg:text-[2.2rem] xl:text-[2.8rem] 2xl:text-[3.2rem]">
             {hero.headline}
           </h1>
 
