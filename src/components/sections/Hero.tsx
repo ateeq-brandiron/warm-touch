@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Check, Phone } from "lucide-react";
 import { hero } from "@/content/hero";
 import { site } from "@/content/site";
@@ -52,10 +53,15 @@ export function Hero() {
           </ul>
         </div>
 
-        <figure className="m-0 flex h-[420px] items-center justify-center overflow-hidden rounded-[56px] bg-cream-surface text-center shadow-md sm:h-[480px] lg:h-[clamp(420px,42vw,560px)]">
-          <figcaption className="mx-10 text-lg font-medium leading-snug text-green-700">
-            {hero.imagePlaceholder}
-          </figcaption>
+        <figure className="relative m-0 h-[420px] overflow-hidden rounded-[56px] bg-cream-surface shadow-md sm:h-[480px] lg:h-[clamp(420px,42vw,560px)]">
+          <Image
+            src={hero.image}
+            alt={hero.imageAlt}
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
         </figure>
       </div>
     </section>

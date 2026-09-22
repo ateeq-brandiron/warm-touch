@@ -14,5 +14,6 @@ export const hero = {
     "Cheri tours with you, in person",
     "One advocate, start to finish",
   ],
-  imagePlaceholder: "Warm photo: adult daughter and her mother sitting together, laughing",
+  image: "/images/hero-mother-daughter.jpg",
+  imageAlt: "An adult daughter and her mother embracing warmly outdoors",
 };
