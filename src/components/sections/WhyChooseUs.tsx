@@ -21,7 +21,7 @@ export function WhyChooseUs() {
               </span>
               <div>
                 <h3 className="font-heading text-xl leading-tight text-green-900">{title}</h3>
-                <p className="mt-3 text-xl leading-relaxed text-wt-ink">{description}</p>
+                <p className="mt-3 text-xl leading-relaxed text-wt-ink lg:text-justify">{description}</p>
               </div>
             </div>
           ))}

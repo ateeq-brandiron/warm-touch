@@ -23,7 +23,7 @@ export function Contact() {
             <h2 className="font-heading text-3xl leading-tight text-white sm:text-4xl">
               {contact.headline}
             </h2>
-            <p className="mt-6 max-w-[26em] text-xl font-medium leading-relaxed text-green-100">
+            <p className="mt-6 max-w-[26em] text-xl font-medium leading-relaxed text-green-100 sm:text-justify">
               {contact.intro}
             </p>
 

@@ -21,7 +21,7 @@ export function Hero() {
           {hero.paragraphs.map((paragraph) => (
             <p
               key={paragraph}
-              className="mt-6 max-w-[30em] text-xl font-medium leading-relaxed text-wt-ink first:mt-8"
+              className="mt-6 max-w-[30em] text-xl font-medium leading-relaxed text-wt-ink first:mt-8 sm:text-justify"
             >
               {paragraph}
             </p>

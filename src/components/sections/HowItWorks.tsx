@@ -20,7 +20,7 @@ export function HowItWorks() {
                 <h3 className="font-heading text-2xl leading-tight text-green-900">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-xl leading-relaxed text-wt-ink">
+                <p className="mt-4 text-xl leading-relaxed text-wt-ink sm:text-justify">
                   {step.description}
                 </p>
                 {step.note && (

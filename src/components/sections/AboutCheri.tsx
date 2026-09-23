@@ -44,7 +44,7 @@ export function AboutCheri() {
             </h2>
 
             {aboutCheri.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="mt-6 text-xl leading-relaxed text-wt-ink">
+              <p key={paragraph} className="mt-6 text-xl leading-relaxed text-wt-ink sm:text-justify">
                 {paragraph}
               </p>
             ))}
@@ -65,7 +65,7 @@ export function AboutCheri() {
               {aboutCheri.quote}
             </blockquote>
 
-            <p className="mt-6 text-lg leading-relaxed text-wt-ink">{aboutCheri.closing}</p>
+            <p className="mt-6 text-lg leading-relaxed text-wt-ink sm:text-justify">{aboutCheri.closing}</p>
           </div>
         </div>
       </div>

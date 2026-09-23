@@ -9,7 +9,7 @@ export function Testimonials() {
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {testimonials.headline}
         </h2>
-        <p className="mt-6 max-w-[30em] text-xl leading-relaxed text-wt-ink-soft">
+        <p className="mt-6 max-w-[30em] text-xl leading-relaxed text-wt-ink-soft sm:text-justify">
           {testimonials.note}
         </p>
 

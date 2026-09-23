@@ -9,7 +9,7 @@ export function FirstConversation() {
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {firstConversation.headline}
         </h2>
-        <p className="mt-6 max-w-[46em] text-xl leading-relaxed text-wt-ink">
+        <p className="mt-6 max-w-[46em] text-xl leading-relaxed text-wt-ink sm:text-justify">
           {firstConversation.intro}
         </p>
 
