@@ -37,7 +37,7 @@ export function FAQ() {
                   </span>
                 </button>
                 {isOpen && (
-                  <p className="px-8 pb-8 text-lg leading-relaxed text-wt-ink">
+                  <p className="px-8 pb-8 text-lg leading-relaxed text-wt-ink sm:text-justify">
                     {item.answer}
                   </p>
                 )}
