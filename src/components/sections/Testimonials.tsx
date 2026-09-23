@@ -1,4 +1,3 @@
-import { Video } from "lucide-react";
 import { testimonials } from "@/content/testimonials";
 
 export function Testimonials() {
@@ -29,13 +28,6 @@ export function Testimonials() {
               </figcaption>
             </figure>
           ))}
-
-          <figure className="m-0 flex items-center gap-5 rounded-[44px] border-[3px] border-dashed border-green-400 px-9 py-9 sm:px-11">
-            <Video className="h-8 w-8 shrink-0 text-green-600" strokeWidth={2.75} />
-            <figcaption className="m-0 text-xl font-semibold leading-snug text-wt-ink-soft">
-              {testimonials.videoPlaceholder}
-            </figcaption>
-          </figure>
         </div>
       </div>
     </section>

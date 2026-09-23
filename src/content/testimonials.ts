@@ -24,5 +24,4 @@ export const testimonials = {
       attribution: "Leslie, Sales Counselor",
     },
   ],
-  videoPlaceholder: "[Placeholder: a short video testimonial could go here.]",
 };
