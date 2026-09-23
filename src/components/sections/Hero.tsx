@@ -41,10 +41,10 @@ export function Hero() {
             {hero.trustPoints.map((point) => (
               <li
                 key={point}
-                className="flex items-center gap-3 text-lg font-bold text-wt-ink"
+                className="flex items-start gap-3 text-lg font-bold text-wt-ink"
               >
                 <Check
-                  className="h-6 w-6 shrink-0 text-green-600"
+                  className="mt-0.5 h-6 w-6 shrink-0 text-green-600"
                   strokeWidth={2.75}
                 />
                 {point}
