@@ -6,8 +6,6 @@ export type FaqItem = {
 export const faq = {
   eyebrow: "Questions families ask",
   headline: "Straight answers, before you even call.",
-  draftNote:
-    "Draft answers, written from the site content, to be reviewed and confirmed before launch.",
   items: [
     {
       question: "Does this really cost my family nothing?",
@@ -22,7 +20,7 @@ export const faq = {
     {
       question: "What areas does WarmTouch serve?",
       answer:
-        "[Draft: service area to be confirmed.] Call and ask about your area. If it isn't one Cheri serves, she'll point you toward someone who can help.",
+        "Call and ask about your area. If it isn't one Cheri covers herself, she'll point you toward someone who can help.",
     },
     {
       question: "We're not sure what kind of care is needed yet. Can you still help?",
@@ -32,7 +30,7 @@ export const faq = {
     {
       question: "How long does the process usually take?",
       answer:
-        "[Draft: typical timeline to be confirmed.] It depends on urgency: some families are touring quickly, others plan months ahead. Cheri moves at your family's pace, not a sales timeline.",
+        "It depends on urgency: some families are touring quickly, others plan months ahead. Cheri moves at your family's pace, not a sales timeline.",
     },
     {
       question: "Do you only work with certain communities?",
