@@ -15,5 +15,5 @@ export const hero = {
     "One advocate, start to finish",
   ],
   image: "/images/hero-mother-daughter.jpg",
-  imageAlt: "An adult daughter and her mother embracing warmly outdoors",
+  imageAlt: "An adult daughter and her mother sitting together in a warm living room, holding hands and smiling",
 };
