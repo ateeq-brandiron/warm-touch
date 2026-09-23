@@ -14,7 +14,7 @@ export function Services() {
           {services.intro}
         </p>
 
-        <div className="mt-11 grid grid-cols-1 items-stretch gap-6 md:grid-cols-3">
+        <div className="mt-11 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
           {services.options.map(({ icon: Icon, name, description, goodFitIf }) => (
             <div
               key={name}

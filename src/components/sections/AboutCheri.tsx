@@ -6,7 +6,7 @@ export function AboutCheri() {
   return (
     <section id="about-cheri" className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-start gap-10 rounded-[56px] bg-cream-surface p-8 sm:p-12">
+        <div className="flex flex-col items-center gap-10 rounded-[56px] bg-cream-surface p-8 sm:p-12 lg:flex-row lg:items-start">
           <div className="mx-auto flex w-full max-w-[260px] flex-col items-center gap-5 text-center lg:sticky lg:top-28">
             <figure className="m-0 h-[240px] w-[240px] overflow-hidden rounded-full shadow-md ring-8 ring-cream">
               <Image
@@ -61,7 +61,7 @@ export function AboutCheri() {
               ))}
             </div>
 
-            <blockquote className="mt-9 border-l-4 border-wt-berry pl-6 font-heading text-xl leading-snug text-green-900">
+            <blockquote className="mt-9 break-words border-l-4 border-wt-berry pl-6 font-heading text-xl leading-snug text-green-900">
               {aboutCheri.quote}
             </blockquote>
 

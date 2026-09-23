@@ -19,7 +19,7 @@ export function Testimonials() {
               key={attribution + quote.slice(0, 12)}
               className="m-0 rounded-[40px] bg-green-100 px-9 py-9 transition-transform duration-150 hover:-translate-y-1 hover:shadow-md sm:px-10"
             >
-              <blockquote className="m-0 font-heading text-2xl leading-snug text-green-900">
+              <blockquote className="m-0 break-words font-heading text-2xl leading-snug text-green-900">
                 {quote}
               </blockquote>
               <figcaption className="mt-6 text-lg font-semibold leading-snug text-wt-ink-soft">
