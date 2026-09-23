@@ -1,12 +1,11 @@
 import { testimonials } from "@/content/testimonials";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function Testimonials() {
   return (
     <section className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
-        <span className="mb-6 block text-base font-bold uppercase tracking-wide text-green-700">
-          {testimonials.eyebrow}
-        </span>
+        <Eyebrow label={testimonials.eyebrow} tone="green" />
         <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
           {testimonials.headline}
         </h2>

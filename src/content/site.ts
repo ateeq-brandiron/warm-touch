@@ -16,8 +16,8 @@ export const site = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Services", href: "#services" },
   { label: "Signs It's Time", href: "#signs" },
+  { label: "Services", href: "#services" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "About Cheri", href: "#about-cheri" },
   { label: "FAQ", href: "#faq" },
