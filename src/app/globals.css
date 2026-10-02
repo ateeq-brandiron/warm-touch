@@ -42,6 +42,9 @@
   --color-wt-amber: #f8931f;
   --color-wt-berry: #dd404b;
   --color-wt-blue: #99aaa2;
+  /* wt-blue tinted ~50% toward white -- a visibly "light blue" card
+     surface, paler than wt-blue but more saturated than wt-sage-100. */
+  --color-blue-surface: #ccd5d1;
 
   --font-heading: var(--font-caprasimo), Georgia, serif;
   --font-body: var(--font-figtree), Arial, Helvetica, sans-serif;
@@ -81,6 +84,7 @@
   --color-wt-amber: var(--color-wt-amber);
   --color-wt-berry: var(--color-wt-berry);
   --color-wt-blue: var(--color-wt-blue);
+  --color-blue-surface: var(--color-blue-surface);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
