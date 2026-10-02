@@ -1,7 +1,11 @@
 import { whyChooseUs } from "@/content/whyChooseUs";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
-const accentBadgeStyles = ["bg-wt-blue text-green-900", "bg-wt-amber text-green-900", "bg-wt-berry text-white"];
+const badgeStyles = [
+  "bg-wt-amber text-green-900",
+  "bg-wt-blue text-green-900",
+  "bg-wt-berry text-white",
+];
 
 export function WhyChooseUs() {
   return (
@@ -13,29 +17,22 @@ export function WhyChooseUs() {
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-9 sm:grid-cols-2">
-          {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => {
-            const isAccent = index % 2 === 1;
-            const badgeClasses = isAccent
-              ? accentBadgeStyles[(index - 1) / 2]
-              : "bg-green-200 text-green-700";
-
-            return (
-              <div key={title} className="group flex items-start gap-6">
-                <span
-                  className={`grid h-14 w-14 shrink-0 place-content-center rounded-2xl transition-all duration-200 group-hover:scale-110 group-hover:bg-amber-500 ${badgeClasses}`}
-                >
-                  <Icon
-                    className="h-7 w-7 transition-colors duration-200 group-hover:text-white"
-                    strokeWidth={2.75}
-                  />
-                </span>
-                <div>
-                  <h3 className="font-heading text-xl leading-tight text-green-900">{title}</h3>
-                  <p className="mt-3 text-xl leading-relaxed text-wt-ink lg:text-justify">{description}</p>
-                </div>
+          {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => (
+            <div key={title} className="group flex items-start gap-6">
+              <span
+                className={`grid h-14 w-14 shrink-0 place-content-center rounded-2xl transition-all duration-200 group-hover:scale-110 group-hover:bg-amber-500 ${badgeStyles[index % badgeStyles.length]}`}
+              >
+                <Icon
+                  className="h-7 w-7 transition-colors duration-200 group-hover:text-white"
+                  strokeWidth={2.75}
+                />
+              </span>
+              <div>
+                <h3 className="font-heading text-xl leading-tight text-green-900">{title}</h3>
+                <p className="mt-3 text-xl leading-relaxed text-wt-ink lg:text-justify">{description}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
