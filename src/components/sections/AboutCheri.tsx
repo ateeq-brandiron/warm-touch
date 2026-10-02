@@ -49,10 +49,14 @@ export function AboutCheri() {
               </p>
             ))}
 
-            <div className="mt-9 flex flex-col gap-6 border-l-2 border-green-400 pl-[28px]">
+            <div className="relative mt-9 flex flex-col gap-6 pl-[28px]">
+              <div
+                aria-hidden="true"
+                className="absolute left-0 top-[calc(0.5rem_+_7px)] bottom-0 w-[2px] bg-green-400"
+              />
               {aboutCheri.timeline.map((item) => (
                 <div key={item.title} className="relative">
-                  <span className="absolute -left-[36px] top-2 h-[14px] w-[14px] rounded-full bg-amber-500 ring-[5px] ring-green-200" />
+                  <span className="absolute -left-[34px] top-2 h-[14px] w-[14px] rounded-full bg-amber-500 ring-[5px] ring-green-200" />
                   <p className="text-lg leading-snug text-wt-ink">
                     <strong className="text-green-900">{item.title}</strong>{" "}
                     {item.description}
