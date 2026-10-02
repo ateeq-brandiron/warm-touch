@@ -41,6 +41,7 @@
   --color-wt-ink-soft: #5d6663;
   --color-wt-amber: #f8931f;
   --color-wt-berry: #dd404b;
+  --color-wt-blue: #99aaa2;
 
   --font-heading: var(--font-caprasimo), Georgia, serif;
   --font-body: var(--font-figtree), Arial, Helvetica, sans-serif;
@@ -79,6 +80,7 @@
   --color-wt-ink-soft: var(--color-wt-ink-soft);
   --color-wt-amber: var(--color-wt-amber);
   --color-wt-berry: var(--color-wt-berry);
+  --color-wt-blue: var(--color-wt-blue);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);

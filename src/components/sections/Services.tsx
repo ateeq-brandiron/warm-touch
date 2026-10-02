@@ -2,6 +2,12 @@ import { Check } from "lucide-react";
 import { services } from "@/content/services";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
+const badgeStyles = [
+  "bg-wt-blue text-green-900",
+  "bg-wt-amber text-green-900",
+  "bg-wt-berry text-white",
+];
+
 export function Services() {
   return (
     <section id="services" className="bg-cream">
@@ -15,13 +21,15 @@ export function Services() {
         </p>
 
         <div className="mt-11 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
-          {services.options.map(({ icon: Icon, name, description, goodFitIf }) => (
+          {services.options.map(({ icon: Icon, name, description, goodFitIf }, index) => (
             <div
               key={name}
               className="rounded-[40px] bg-cream-surface p-9 transition-transform duration-150 hover:-translate-y-1 hover:shadow-lg"
             >
-              <span className="mb-5 grid h-[60px] w-[60px] place-content-center rounded-[20px] bg-green-200">
-                <Icon className="h-7 w-7 text-green-700" strokeWidth={2.75} />
+              <span
+                className={`mb-5 grid h-[60px] w-[60px] place-content-center rounded-[20px] ${badgeStyles[index % badgeStyles.length]}`}
+              >
+                <Icon className="h-7 w-7" strokeWidth={2.75} />
               </span>
               <h3 className="font-heading text-2xl leading-tight text-green-900">{name}</h3>
               <p className="mt-4 text-xl leading-relaxed text-wt-ink">{description}</p>

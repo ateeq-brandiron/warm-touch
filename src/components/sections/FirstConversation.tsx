@@ -1,6 +1,13 @@
 import { firstConversation } from "@/content/firstConversation";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
+const badgeStyles = [
+  "bg-green-200 text-amber-600",
+  "bg-wt-berry text-white",
+  "bg-wt-blue text-green-900",
+  "bg-wt-amber text-green-900",
+];
+
 export function FirstConversation() {
   return (
     <section className="bg-cream">
@@ -14,13 +21,15 @@ export function FirstConversation() {
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {firstConversation.topics.map(({ icon: Icon, title, description }) => (
+          {firstConversation.topics.map(({ icon: Icon, title, description }, index) => (
             <div
               key={title}
               className="rounded-[36px] bg-wt-sage-100 p-8 transition-transform duration-150 hover:-translate-y-1 hover:shadow-md"
             >
-              <span className="mb-5 grid h-[52px] w-[52px] place-content-center rounded-2xl bg-green-200">
-                <Icon className="h-6 w-6 text-amber-600" strokeWidth={2.25} />
+              <span
+                className={`mb-5 grid h-[52px] w-[52px] place-content-center rounded-2xl ${badgeStyles[index % badgeStyles.length]}`}
+              >
+                <Icon className="h-6 w-6" strokeWidth={2.25} />
               </span>
               <h3 className="font-heading text-xl leading-tight text-green-900">{title}</h3>
               <p className="mt-3 text-lg leading-relaxed text-wt-ink">{description}</p>
