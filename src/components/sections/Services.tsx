@@ -31,7 +31,7 @@ export function Services() {
               >
                 <Icon className="h-7 w-7" strokeWidth={2.75} />
               </span>
-              <h3 className="font-heading text-2xl leading-tight text-green-900">{name}</h3>
+              <h3 className="font-heading text-2xl leading-tight text-amber-700">{name}</h3>
               <p className="mt-4 text-xl leading-relaxed text-wt-ink">{description}</p>
               <p className="mt-7 text-lg font-bold text-green-900">
                 Often a good fit if your loved one:

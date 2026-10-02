@@ -17,7 +17,7 @@ export function HowItWorks() {
                 {index + 1}
               </span>
               <div>
-                <h3 className="font-heading text-2xl leading-tight text-green-900">
+                <h3 className="font-heading text-2xl leading-tight text-amber-700">
                   {step.title}
                 </h3>
                 <p className="mt-4 text-xl leading-relaxed text-wt-ink sm:text-justify">
