@@ -12,7 +12,7 @@ export function FAQ() {
     <section id="faq" className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <Eyebrow label={faq.eyebrow} tone="green" />
-        <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
+        <h2 className="font-heading text-3xl leading-tight text-amber-700 sm:text-4xl lg:text-[2.6rem]">
           {faq.headline}
         </h2>
 

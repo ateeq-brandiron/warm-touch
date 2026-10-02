@@ -12,7 +12,7 @@ export function WhyChooseUs() {
     <section className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <Eyebrow label={whyChooseUs.eyebrow} align="center" className="justify-center" />
-        <h2 className="mx-auto max-w-[16em] text-center font-heading text-3xl leading-tight text-green-900 sm:text-4xl lg:text-[2.6rem]">
+        <h2 className="mx-auto max-w-[16em] text-center font-heading text-3xl leading-tight text-amber-700 sm:text-4xl lg:text-[2.6rem]">
           {whyChooseUs.headline}
         </h2>
 
