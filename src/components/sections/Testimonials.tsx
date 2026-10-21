@@ -3,7 +3,7 @@ import { testimonials } from "@/content/testimonials";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const markStyles = [
-  "bg-green-700 text-white",
+  "bg-green-500 text-green-900",
   "bg-wt-blue text-green-900",
   "bg-wt-amber text-green-900",
   "bg-wt-berry text-white",
