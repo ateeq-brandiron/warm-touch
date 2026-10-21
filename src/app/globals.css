@@ -27,7 +27,12 @@
      "vibrant spring green" (#78C442, Slack 2026-10-20), with the rest of
      the ramp built from its hue so every step reads as the same vibrant
      green rather than drifting back toward olive/brown. 900 is reserved
-     for small accent bands (header nav, "Our Promise"). */
+     for small accent bands (header nav, "Our Promise") and is lightened
+     slightly off the strict hue-ramp value (18% lightness rather than
+     14%) because at 14% it rendered as a near-black blob across the
+     footer's full-width background rather than a readable forest green;
+     18% still clears 4.5:1 text contrast everywhere it's used (worst
+     case is green-900 text on wt-amber, at 4.90:1). */
   --color-green-100: #eef7e8;
   --color-green-200: #d8edc9;
   --color-green-300: #bae09e;
@@ -36,7 +41,7 @@
   --color-green-600: #4b7c27;
   --color-green-700: #3a6020;
   --color-green-800: #2d471a;
-  --color-green-900: #213315;
+  --color-green-900: #2b411b;
 
   /* Named accents from the approved palette, used for specific one-off
      treatments rather than a full tonal ramp. */
