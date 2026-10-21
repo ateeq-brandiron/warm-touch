@@ -4,7 +4,7 @@ import { navLinks, site } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="bg-green-900">
+    <footer className="bg-green-800">
       <div className="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-6">
           <Image

@@ -17,7 +17,7 @@ export function Contact() {
   return (
     <section id="get-started" className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 rounded-[56px] bg-green-700 p-8 shadow-md sm:p-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 rounded-[56px] bg-green-800 p-8 shadow-md sm:p-12 lg:grid-cols-2">
           <div>
             <Eyebrow label={contact.eyebrow} tone="amber-light" />
             <h2 className="font-heading text-3xl leading-tight text-white sm:text-4xl">

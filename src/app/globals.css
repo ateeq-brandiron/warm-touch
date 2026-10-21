@@ -26,13 +26,18 @@
      read as "gray" and "end-of-life looking"); 500 is Shelly's approved
      "vibrant spring green" (#78C442, Slack 2026-10-20), with the rest of
      the ramp built from its hue so every step reads as the same vibrant
-     green rather than drifting back toward olive/brown. 900 is reserved
-     for small accent bands (header nav, "Our Promise") and is lightened
-     slightly off the strict hue-ramp value (18% lightness rather than
-     14%) because at 14% it rendered as a near-black blob across the
-     footer's full-width background rather than a readable forest green;
-     18% still clears 4.5:1 text contrast everywhere it's used (worst
-     case is green-900 text on wt-amber, at 4.90:1). */
+     green rather than drifting back toward olive/brown.
+
+     800 is the one "dark block" chrome color -- Header, Footer, and the
+     Contact section's card all use bg-green-800 so those three large
+     solid-green surfaces read as the same color instead of three
+     slightly different ramp steps (which was very noticeable once the
+     ramp got more saturated). 900 is used only as a text color on light
+     surfaces now (never as a background) and is lightened slightly off
+     the strict hue-ramp value (18% lightness rather than 14%) because at
+     14% a block of it read as near-black rather than a readable forest
+     green; 18% still clears 4.5:1 text contrast everywhere it's used
+     (worst case is green-900 text on wt-amber, at 4.90:1). */
   --color-green-100: #eef7e8;
   --color-green-200: #d8edc9;
   --color-green-300: #bae09e;
