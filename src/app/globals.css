@@ -2,7 +2,9 @@
 
 :root {
   /* Approved palette update (2026): #ed6a40 #e89e77 #968b55 #6e7774 #c6b388
-     #99aaa2 #f8931f #dd404b — replaces the earlier green/amber system. */
+     #99aaa2 #f8931f #dd404b #78c442 — replaces the earlier green/amber
+     system. #78c442 ("vibrant spring green") was added 2026-10-20 to
+     replace the muted #968b55 olive as the brand green ramp's base. */
   --color-cream: #f8f3e8;
   --color-cream-surface: #eae1cd;
   --color-ink: #3d443f;
@@ -19,17 +21,22 @@
   --color-amber-800: #643312;
   --color-amber-900: #402310;
 
-  /* Olive/khaki — WarmTouch brand color: headlines, icons, buttons, dividers.
-     900 is reserved for small accent bands (header nav, "Our Promise"). */
-  --color-green-100: #f0eddf;
-  --color-green-200: #ddd7bd;
-  --color-green-300: #c9c199;
-  --color-green-400: #b0a678;
-  --color-green-500: #968b55;
-  --color-green-600: #7d7446;
-  --color-green-700: #665f39;
-  --color-green-800: #4f4a2c;
-  --color-green-900: #3b3721;
+  /* Spring green — WarmTouch brand color: headlines, icons, buttons, dividers.
+     Replaces the earlier muted olive ramp per client feedback (the olive
+     read as "gray" and "end-of-life looking"); 500 is Shelly's approved
+     "vibrant spring green" (#78C442, Slack 2026-10-20), with the rest of
+     the ramp built from its hue so every step reads as the same vibrant
+     green rather than drifting back toward olive/brown. 900 is reserved
+     for small accent bands (header nav, "Our Promise"). */
+  --color-green-100: #eef7e8;
+  --color-green-200: #d8edc9;
+  --color-green-300: #bae09e;
+  --color-green-400: #98d36f;
+  --color-green-500: #78c442;
+  --color-green-600: #4b7c27;
+  --color-green-700: #3a6020;
+  --color-green-800: #2d471a;
+  --color-green-900: #213315;
 
   /* Named accents from the approved palette, used for specific one-off
      treatments rather than a full tonal ramp. */
