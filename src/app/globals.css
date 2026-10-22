@@ -65,9 +65,17 @@
   /* Named accents from the approved palette, used for specific one-off
      treatments rather than a full tonal ramp. */
   --color-wt-khaki: #c6b388;
+  /* The actual swatch-5 peach from the approved palette. wt-peach-100 below
+     is a separate, much lighter tint used for the Signs cards -- kept as
+     its own token since it serves a different role (a pale card surface,
+     not an accent color). */
+  --color-wt-peach: #e89e77;
   --color-wt-peach-100: #f9e6d9;
   --color-wt-sage-100: #e6ebe8;
-  --color-wt-slate-dark: #545c59;
+  /* Corrected to the exact approved swatch-4 slate (#6e7774) -- was
+     #545c59, a close but not pixel-exact value, and had become unused
+     entirely once Our Promise moved onto the green-500 chrome. */
+  --color-wt-slate-dark: #6e7774;
   --color-wt-ink: #464f4c;
   --color-wt-ink-soft: #5d6663;
   --color-wt-amber: #f8931f;
@@ -107,6 +115,7 @@
   --color-green-900: var(--color-green-900);
 
   --color-wt-khaki: var(--color-wt-khaki);
+  --color-wt-peach: var(--color-wt-peach);
   --color-wt-peach-100: var(--color-wt-peach-100);
   --color-wt-sage-100: var(--color-wt-sage-100);
   --color-wt-slate-dark: var(--color-wt-slate-dark);

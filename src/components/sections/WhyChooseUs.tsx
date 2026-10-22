@@ -6,6 +6,8 @@ const badgeStyles = [
   "bg-wt-blue text-green-900",
   "bg-wt-berry text-white",
   "bg-green-500 text-green-900",
+  "bg-wt-peach text-green-900",
+  "bg-wt-slate-dark text-white",
 ];
 
 export function WhyChooseUs() {
