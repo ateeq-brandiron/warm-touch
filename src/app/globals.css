@@ -28,15 +28,24 @@
      the ramp built from its hue so every step reads as the same vibrant
      green rather than drifting back toward olive/brown.
 
-     700 is the one "dark block" chrome color -- Header, the Our Promise
-     band, Footer, and the Contact section's card all use bg-green-700 so
-     those large solid-green surfaces read as one consistent color.
-     (Briefly standardized on 800 instead, but the team's live-site
-     feedback was that it still read as plain "dark green" rather than
-     "lighter/happier," so moved the whole chrome family one step
-     lighter to 700, which also gives every chrome text color -- white,
-     green-100/200/300, and the "amber-light" eyebrow -- comfortably more
-     contrast margin, 4.96:1 and up.) 900 is used only as a text color on
+     500 is the literal #78C442 Shelly specified, and it's now the one
+     "block" chrome color too -- Header, the Our Promise band, Footer,
+     and the Contact section's card all use bg-green-500 directly, per
+     the team's explicit ask to use that exact color rather than a
+     derived dark shade. (Tried 800, then 700, as safer dark shades
+     first -- the team's live-site feedback was that both still read as
+     plain "dark green.") Because #78C442 is too light for white text
+     (2.15:1), every foreground element on those four surfaces was
+     flipped to dark green-900/800 instead (5.21:1 / 4.82:1), matching
+     the pattern already used for the badge accents. The Header/Footer
+     logo is rendered via the Logo component (CSS mask, see
+     ui/Logo.tsx) instead of the flattened PNG assets, because neither
+     existing logo color variant has usable contrast against #78C442
+     (cream 1.94:1, the dark-green PNG's own fill color 2.15:1) -- the
+     mask lets it render in green-900 like the rest of that chrome's
+     text. The Eyebrow component's "amber-light" tone was darkened to
+     text-amber-900 for the same reason (its old text-cream value was
+     1.94:1 on this background). 900 is used only as a text color on
      light surfaces now (never as a background) and is lightened slightly
      off the strict hue-ramp value (18% lightness rather than 14%)
      because at 14% a block of it read as near-black rather than a

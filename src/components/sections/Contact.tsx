@@ -17,17 +17,17 @@ export function Contact() {
   return (
     <section id="get-started" className="bg-cream">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 rounded-[56px] bg-green-700 p-8 shadow-md sm:p-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 rounded-[56px] bg-green-500 p-8 shadow-md sm:p-12 lg:grid-cols-2">
           <div>
             <Eyebrow label={contact.eyebrow} tone="amber-light" />
-            <h2 className="font-heading text-3xl leading-tight text-white sm:text-4xl">
+            <h2 className="font-heading text-3xl leading-tight text-green-900 sm:text-4xl">
               {contact.headline}
             </h2>
-            <p className="mt-6 max-w-[26em] text-xl font-medium leading-relaxed text-green-100 sm:text-justify">
+            <p className="mt-6 max-w-[26em] text-xl font-medium leading-relaxed text-green-900 sm:text-justify">
               {contact.intro}
             </p>
 
-            <p className="mt-8 text-lg font-bold text-green-200">{contact.callLabel}</p>
+            <p className="mt-8 text-lg font-bold text-green-800">{contact.callLabel}</p>
             <a
               href={site.phoneHref}
               className="mt-3 inline-flex items-center gap-4 rounded-full bg-cream px-8 py-6 font-heading text-2xl text-green-800 transition-colors hover:bg-wt-amber hover:text-green-900 sm:text-3xl"
@@ -40,7 +40,7 @@ export function Contact() {
 
             <div className="flex flex-col gap-4">
               {contact.steps.map((step, index) => (
-                <p key={step} className="flex items-center gap-4 text-xl leading-snug text-green-100">
+                <p key={step} className="flex items-center gap-4 text-xl leading-snug text-green-900">
                   <span className="grid h-[42px] w-[42px] shrink-0 place-content-center rounded-full bg-green-600 font-heading text-xl text-white">
                     {index + 1}
                   </span>

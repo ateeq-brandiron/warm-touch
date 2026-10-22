@@ -10,14 +10,17 @@ type EyebrowProps = {
 
 const toneClasses: Record<NonNullable<EyebrowProps["tone"]>, string> = {
   amber: "text-amber-700",
-  "amber-light": "text-cream",
+  // Used on the bright green-500 chrome (Our Promise, Contact): text-cream
+  // and text-amber-700 both fail contrast there (1.94:1 / 2.47:1), so this
+  // tone is darkened specifically for that surface.
+  "amber-light": "text-amber-900",
   "amber-strong": "text-[#9a3f22]",
   green: "text-green-700",
 };
 
 const dashToneClasses: Record<NonNullable<EyebrowProps["tone"]>, string> = {
   amber: "bg-amber-600",
-  "amber-light": "bg-wt-amber",
+  "amber-light": "bg-amber-700",
   "amber-strong": "bg-amber-600",
   green: "bg-green-600",
 };
