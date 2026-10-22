@@ -10,7 +10,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-green-800">
+    <header className="sticky top-0 z-50 bg-green-700">
       <div className="mx-auto flex max-w-[1440px] items-center gap-5 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="mr-auto block shrink-0">
           <Image
@@ -62,7 +62,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="border-t border-green-700/60 bg-green-800 px-4 pb-5 pt-2 sm:px-6 lg:hidden">
+        <nav className="border-t border-white/15 bg-green-700 px-4 pb-5 pt-2 sm:px-6 lg:hidden">
           <ul className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>
