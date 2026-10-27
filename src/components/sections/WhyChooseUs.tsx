@@ -19,9 +19,9 @@ export function WhyChooseUs() {
           {whyChooseUs.headline}
         </h2>
 
-        <div className="mt-12 columns-1 gap-9 sm:columns-2">
+        <div className="mt-12 flex flex-col gap-9">
           {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => (
-            <div key={title} className="group mb-9 flex items-start gap-6 break-inside-avoid">
+            <div key={title} className="group flex items-start gap-6">
               <span
                 className={`grid h-14 w-14 shrink-0 place-content-center rounded-2xl transition-all duration-200 group-hover:scale-110 group-hover:bg-amber-500 ${badgeStyles[index % badgeStyles.length]}`}
               >
@@ -30,7 +30,7 @@ export function WhyChooseUs() {
                   strokeWidth={2.75}
                 />
               </span>
-              <div>
+              <div className="max-w-[46em]">
                 <h3 className="font-heading text-xl leading-tight text-amber-700">{title}</h3>
                 <p className="mt-3 text-xl leading-relaxed text-wt-ink lg:text-justify">{description}</p>
               </div>
