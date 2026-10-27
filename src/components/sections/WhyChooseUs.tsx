@@ -2,8 +2,8 @@ import { whyChooseUs } from "@/content/whyChooseUs";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const badgeStyles = [
-  "bg-wt-peach text-green-900",
   "bg-wt-slate-dark text-white",
+  "bg-wt-peach text-green-900",
   "bg-wt-berry text-white",
   "bg-green-500 text-green-900",
   "bg-wt-amber text-green-900",

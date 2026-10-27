@@ -19,16 +19,16 @@ export const whyChooseUs = {
   headline: "Guidance that feels like family.",
   values: [
     {
-      icon: Phone,
-      title: "One point of contact",
-      description:
-        "No hand-offs, no juggling different agents, just Cheri, from your very first call through move-in day.",
-    },
-    {
       icon: ShieldCheck,
       title: "Honest, even when it's harder",
       description:
         "If a community isn't the right fit, Cheri will say so, even if it means the search takes a little longer. Her reputation depends on getting it right, not on filling a quota.",
+    },
+    {
+      icon: Phone,
+      title: "One point of contact",
+      description:
+        "No hand-offs, no juggling different agents, just Cheri, from your very first call through move-in day.",
     },
     {
       icon: Users,
