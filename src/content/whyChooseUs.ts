@@ -22,7 +22,7 @@ export const whyChooseUs = {
       icon: CircleDollarSign,
       title: "Always free to families",
       description:
-        "Our services cost you nothing. WarmTouch is compensated by the communities we place with, never by you. No consulting fee, no membership, no catch.",
+        "Our placement services are completely complimentary to families. WarmTouch is compensated directly by the senior living communities, so there are no consulting charges. Our goal is to provide trusted guidance and personalized support throughout your search, with no financial obligation or hidden costs by WarmTouch.",
     },
     {
       icon: MapPin,

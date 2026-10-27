@@ -6,8 +6,9 @@ export const aboutCheri = {
   tags: ["Patient", "Honest", "Local", "No pressure, ever"],
   headline: "She learned this community from the inside.",
   paragraphs: [
-    "Cheri spent years working directly inside senior living communities, building genuine relationships with residents, caregivers, and staff along the way. Visit after visit, conversation after conversation, she got to know residents by name, learned which staff genuinely cared and which just showed up, and built a working understanding of the senior living world that most people never get close to.",
-    "Families started asking her opinion. Then they started asking her to come along. Over time, “can you help us find a place for Mom or Dad” became a calling of its own, and WarmTouch was born.",
+    "Cheri spent years working directly within senior living communities, building meaningful relationships with residents, caregivers, and staff. Through countless visits and conversations, she gained firsthand insight into the senior living experience—getting to know residents personally, recognizing the caregivers who truly made a difference, and understanding what separates a good community from one that genuinely feels like home.",
+    "As families came to trust her knowledge and perspective, they began turning to her for guidance in finding the right senior living options for their loved ones. What started as a natural extension of the relationships she had built grew into a deeper passion: helping families navigate the often overwhelming process of finding safe, compassionate, and appropriate care for themselves or their loved ones.",
+    "That passion became the foundation of WarmTouch—a personalized placement service built on experience, trust, compassion, and a genuine understanding of what matters most to families during one of life's most important transitions.",
   ],
   timeline: [
     {
