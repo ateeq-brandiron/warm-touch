@@ -19,7 +19,7 @@ export function WhyChooseUs() {
           {whyChooseUs.headline}
         </h2>
 
-        <div className="mt-12 flex flex-col gap-9">
+        <div className="mx-auto mt-12 flex max-w-[50em] flex-col gap-9">
           {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => (
             <div key={title} className="group flex items-start gap-6">
               <span
@@ -30,9 +30,9 @@ export function WhyChooseUs() {
                   strokeWidth={2.75}
                 />
               </span>
-              <div className="max-w-[46em]">
+              <div>
                 <h3 className="font-heading text-xl leading-tight text-amber-700">{title}</h3>
-                <p className="mt-3 text-xl leading-relaxed text-wt-ink lg:text-justify">{description}</p>
+                <p className="mt-3 text-xl leading-relaxed text-wt-ink">{description}</p>
               </div>
             </div>
           ))}
