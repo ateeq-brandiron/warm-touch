@@ -19,16 +19,16 @@ export const whyChooseUs = {
   headline: "Guidance that feels like family.",
   values: [
     {
-      icon: CircleDollarSign,
-      title: "Always free to families",
+      icon: Phone,
+      title: "One point of contact",
       description:
-        "Our placement services are completely complimentary to families. WarmTouch is compensated directly by the senior living communities, so there are no consulting charges. Our goal is to provide trusted guidance and personalized support throughout your search, with no financial obligation or hidden costs by WarmTouch.",
+        "No hand-offs, no juggling different agents, just Cheri, from your very first call through move-in day.",
     },
     {
-      icon: MapPin,
-      title: "Local & personal",
+      icon: ShieldCheck,
+      title: "Honest, even when it's harder",
       description:
-        "Cheri knows these communities from the inside: years spent working alongside residents and caregivers, not reading from a national call-center script.",
+        "If a community isn't the right fit, Cheri will say so, even if it means the search takes a little longer. Her reputation depends on getting it right, not on filling a quota.",
     },
     {
       icon: Users,
@@ -43,16 +43,16 @@ export const whyChooseUs = {
         "From placement fees to move-in terms, Cheri advocates on your behalf so your family isn't negotiating alone against a sales team.",
     },
     {
-      icon: Phone,
-      title: "One point of contact",
+      icon: CircleDollarSign,
+      title: "Always free to families",
       description:
-        "No hand-offs, no juggling different agents, just Cheri, from your very first call through move-in day.",
+        "Our placement services are completely complimentary to families. WarmTouch is compensated directly by the senior living communities, so there are no consulting charges. Our goal is to provide trusted guidance and personalized support throughout your search, with no financial obligation or hidden costs by WarmTouch.",
     },
     {
-      icon: ShieldCheck,
-      title: "Honest, even when it's harder",
+      icon: MapPin,
+      title: "Local & personal",
       description:
-        "If a community isn't the right fit, Cheri will say so, even if it means the search takes a little longer. Her reputation depends on getting it right, not on filling a quota.",
+        "Cheri knows these communities from the inside: years spent working alongside residents and caregivers, not reading from a national call-center script.",
     },
   ] satisfies ValueProp[],
 };
