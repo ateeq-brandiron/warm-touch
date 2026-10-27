@@ -19,9 +19,9 @@ export function WhyChooseUs() {
           {whyChooseUs.headline}
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-9 sm:grid-cols-2">
+        <div className="mt-12 columns-1 gap-9 sm:columns-2">
           {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => (
-            <div key={title} className="group flex items-start gap-6">
+            <div key={title} className="group mb-9 flex items-start gap-6 break-inside-avoid">
               <span
                 className={`grid h-14 w-14 shrink-0 place-content-center rounded-2xl transition-all duration-200 group-hover:scale-110 group-hover:bg-amber-500 ${badgeStyles[index % badgeStyles.length]}`}
               >
