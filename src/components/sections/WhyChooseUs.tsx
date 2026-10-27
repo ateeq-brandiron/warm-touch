@@ -19,7 +19,7 @@ export function WhyChooseUs() {
           {whyChooseUs.headline}
         </h2>
 
-        <div className="mx-auto mt-12 flex max-w-[50em] flex-col gap-9">
+        <div className="mt-12 grid grid-cols-1 items-start gap-x-16 gap-y-9 sm:grid-cols-2">
           {whyChooseUs.values.map(({ icon: Icon, title, description }, index) => (
             <div key={title} className="group flex items-start gap-6">
               <span
