@@ -14,6 +14,6 @@ export const hero = {
     "Cheri tours with you, in person",
     "One advocate, start to finish",
   ],
-  image: "/images/hero-mother-daughter.jpg",
-  imageAlt: "An adult daughter and her mother sitting together in a warm living room, holding hands and smiling",
+  image: "/images/community-living-room.webp",
+  imageAlt: "A resident relaxing in the bright, comfortably furnished living room of a senior living community",
 };
