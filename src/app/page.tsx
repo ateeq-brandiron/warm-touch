@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { OurPromise } from "@/components/sections/OurPromise";
 import { Signs } from "@/components/sections/Signs";
 import { Services } from "@/components/sections/Services";
+import { CommunityGlimpse } from "@/components/sections/CommunityGlimpse";
 import { FirstConversation } from "@/components/sections/FirstConversation";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
@@ -21,6 +22,7 @@ export default function Home() {
         <OurPromise />
         <Signs />
         <Services />
+        <CommunityGlimpse />
         <FirstConversation />
         <HowItWorks />
         <WhyChooseUs />
