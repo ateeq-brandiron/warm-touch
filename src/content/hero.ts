@@ -14,6 +14,6 @@ export const hero = {
     "Cheri tours with you, in person",
     "One advocate, start to finish",
   ],
-  image: "/images/community-living-room.webp",
-  imageAlt: "A resident relaxing in the bright, comfortably furnished living room of a senior living community",
+  image: "/images/hero-lifestyle-reading.webp",
+  imageAlt: "A smiling senior woman relaxing with a book in a warm, sunlit community lounge",
 };

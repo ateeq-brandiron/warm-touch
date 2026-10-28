@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { firstConversation } from "@/content/firstConversation";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
@@ -20,8 +21,8 @@ export function FirstConversation() {
           {firstConversation.intro}
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {firstConversation.topics.map(({ icon: Icon, title, description }, index) => (
+        <div className="mt-10 grid grid-cols-1 items-start gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          {firstConversation.topics.map(({ icon: Icon, title, description, image, imageAlt }, index) => (
             <div
               key={title}
               className="rounded-[36px] bg-wt-sage-100 p-8 transition-transform duration-150 hover:-translate-y-1 hover:shadow-md"
@@ -33,6 +34,11 @@ export function FirstConversation() {
               </span>
               <h3 className="font-heading text-xl leading-tight text-green-900">{title}</h3>
               <p className="mt-3 text-lg leading-relaxed text-wt-ink">{description}</p>
+              {image && (
+                <div className="relative mt-5 aspect-[4/3] overflow-hidden rounded-2xl">
+                  <Image src={image} alt={imageAlt ?? ""} fill sizes="(min-width: 1280px) 25vw, 50vw" className="object-cover" />
+                </div>
+              )}
             </div>
           ))}
         </div>
