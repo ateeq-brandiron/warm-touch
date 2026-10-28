@@ -23,7 +23,7 @@ export const firstConversation = {
       icon: Heart,
       title: "What matters most",
       description:
-        "Dining preferences, hobbies and activities, whether pets are part of the family, location, and budget.",
+        "Dining preferences, hobbies and activities, pets are welcome, location, and budget.",
     },
     {
       icon: CirclePlus,

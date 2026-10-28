@@ -49,5 +49,5 @@ export const services = {
     },
   ] satisfies CareOption[],
   closing:
-    "Not sure which one fits? That's normal. Most families start there, and figuring it out together is part of the first conversation.",
+    "Not sure which one fits? Most families start there, and figuring it out together is part of the first conversation.",
 };

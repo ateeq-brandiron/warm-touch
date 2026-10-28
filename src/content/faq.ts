@@ -8,9 +8,8 @@ export const faq = {
   headline: "Straight answers, before you even call.",
   items: [
     {
-      question: "Does this really cost my family nothing?",
-      answer:
-        "Yes. WarmTouch is compensated by the communities we place with, so there is no consulting fee, no membership, and no charge to your family at any point in the process.",
+      question: "Will we be charged for your guidance and support?",
+      answer: "No, Warm Touch is compensated by the senior living communities.",
     },
     {
       question: "How is that different from just calling communities myself?",

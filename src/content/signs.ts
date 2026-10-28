@@ -38,7 +38,7 @@ export const signs = {
     },
   ] satisfies Sign[],
   closing:
-    "None of these mean it's too late, or that your family has missed something. They just mean it might help to have someone in your corner as you figure out what's next.",
+    "They just mean it might help to have someone in your corner as you figure out what's next.",
   cta: {
     label: "Talk it through with Cheri",
   },
