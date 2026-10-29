@@ -14,6 +14,6 @@ export const hero = {
     "Cheri tours with you, in person",
     "One advocate, start to finish",
   ],
-  image: "/images/hero-lifestyle-reading.webp",
-  imageAlt: "A smiling senior woman relaxing with a book in a warm, sunlit community lounge",
+  image: "/images/pets-welcome-gathering.webp",
+  imageAlt: "Residents laughing together over coffee and a board game while one pets a friendly golden retriever",
 };
