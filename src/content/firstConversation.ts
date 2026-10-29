@@ -5,8 +5,6 @@ export type ConversationTopic = {
   icon: LucideIcon;
   title: string;
   description: string;
-  image?: string;
-  imageAlt?: string;
 };
 
 export const firstConversation = {
@@ -26,8 +24,6 @@ export const firstConversation = {
       title: "What matters most",
       description:
         "Dining preferences, hobbies and activities, pets are welcome, location, and budget.",
-      image: "/images/pets-welcome-gathering.webp",
-      imageAlt: "Residents laughing together over coffee and a board game while one pets a friendly golden retriever",
     },
     {
       icon: CirclePlus,
