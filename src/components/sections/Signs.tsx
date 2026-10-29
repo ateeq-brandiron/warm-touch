@@ -26,13 +26,9 @@ export function Signs() {
           ))}
         </div>
 
-        <p className="mx-auto mt-9 max-w-[40em] text-center text-xl leading-relaxed text-wt-ink">
-          {signs.closing}
-        </p>
-
         <a
           href={site.phoneHref}
-          className="mx-auto mt-7 flex w-fit items-center gap-3 rounded-full bg-amber-700 px-9 py-5 font-heading text-xl text-white shadow-sm transition-colors hover:bg-wt-amber hover:text-green-900"
+          className="mx-auto mt-9 flex w-fit items-center gap-3 rounded-full bg-amber-700 px-9 py-5 font-heading text-xl text-white shadow-sm transition-colors hover:bg-wt-amber hover:text-green-900"
         >
           {signs.cta.label}
         </a>

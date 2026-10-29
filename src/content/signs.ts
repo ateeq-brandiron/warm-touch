@@ -37,8 +37,6 @@ export const signs = {
       text: "Memory lapses that are becoming more frequent: repeated questions, missed appointments, or getting turned around in familiar places.",
     },
   ] satisfies Sign[],
-  closing:
-    "They just mean it might help to have someone in your corner as you figure out what's next.",
   cta: {
     label: "Talk it through with Cheri",
   },
