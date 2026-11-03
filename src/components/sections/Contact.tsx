@@ -13,6 +13,8 @@ const labelClasses = "flex flex-col gap-2 text-lg font-bold text-green-900";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [sending, setSending] = useState(false);
 
   return (
     <section id="get-started" className="bg-cream">
@@ -51,12 +53,32 @@ export function Contact() {
           </div>
 
           <form
-            onSubmit={(event) => {
+            onSubmit={async (event) => {
               event.preventDefault();
-              setSubmitted(true);
+              const form = event.currentTarget;
+              setSending(true);
+              setError(false);
+              try {
+                const response = await fetch(contact.formEndpoint, {
+                  method: "POST",
+                  body: new FormData(form),
+                  headers: { Accept: "application/json" },
+                });
+                if (response.ok) {
+                  setSubmitted(true);
+                  form.reset();
+                } else {
+                  setError(true);
+                }
+              } catch {
+                setError(true);
+              } finally {
+                setSending(false);
+              }
             }}
             className="flex flex-col gap-5 rounded-[44px] bg-cream px-8 py-9 sm:px-9"
           >
+            <input type="hidden" name="_cc" value={contact.formCcEmail} />
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               <label className={labelClasses}>
                 Your name
@@ -120,13 +142,19 @@ export function Contact() {
 
             <button
               type="submit"
-              className="min-h-[66px] rounded-full bg-green-700 font-heading text-xl text-white transition-colors hover:bg-wt-amber hover:text-green-900"
+              disabled={sending}
+              className="min-h-[66px] rounded-full bg-green-700 font-heading text-xl text-white transition-colors hover:bg-wt-amber hover:text-green-900 disabled:cursor-not-allowed disabled:opacity-70"
             >
-              {contact.submitLabel}
+              {sending ? "Sending…" : contact.submitLabel}
             </button>
             {submitted && (
               <p className="m-0 rounded-2xl bg-green-100 px-5 py-4 text-lg leading-relaxed text-wt-ink">
                 {contact.submitMessage}
+              </p>
+            )}
+            {error && (
+              <p className="m-0 rounded-2xl bg-wt-peach-100 px-5 py-4 text-lg leading-relaxed text-wt-ink">
+                {contact.errorMessage}
               </p>
             )}
             <p className="m-0 text-lg italic leading-relaxed text-wt-ink-soft">{contact.formNote}</p>

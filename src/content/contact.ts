@@ -1,4 +1,6 @@
 export const contact = {
+  formEndpoint: "https://formspree.io/f/xoeepnrw",
+  formCcEmail: "warmtouchcv@yahoo.com",
   eyebrow: "Get started",
   headline: "Let's start the conversation.",
   intro:
@@ -18,5 +20,7 @@ export const contact = {
   submitLabel: "Request a free consultation",
   formNote: "Cheri usually responds personally: no call centers, no automated hand-offs.",
   submitMessage:
-    "Thanks for reaching out! This form isn't connected yet, for the fastest response, please call or text (520) 909-3908 and Cheri will help right away.",
+    "Thanks for reaching out! Cheri has received your message and will be in touch soon.",
+  errorMessage:
+    "Something went wrong sending that. Please call or text (520) 909-3908 and Cheri will help right away.",
 };
