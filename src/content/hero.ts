@@ -1,5 +1,5 @@
 export const hero = {
-  eyebrow: "123456789 Home placement services",
+  eyebrow: "Home placement services",
   headline: "You don't have to find the right place alone.",
   paragraphs: [
     "Finding the right independent living, assisted living, or memory care community can feel overwhelming, especially when you're doing it for someone you love, on a deadline, with a hundred questions and no idea where to start.",
